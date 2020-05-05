@@ -1,0 +1,102 @@
+个人使用经验，欢迎补充，不断更新......
+# Description: Mac分享
+# Author : qcypggs@qq.com	
+# Version : 1.0
+# Date : 2019-10-20 初稿
+#目的：mac经验分享，特别是新手新设备需要快速上手mac常用软件和优化一些使用方式，我尽力做到极简，并持续更新...
+软件篇：
+1, 终端神器iterm2  
+官网：https://www.iterm2.com/
+下载链接：https://iterm2.com/downloads/stable/iTerm2-3_2_0.zip
+配合  https://ohmyz.sh/     食用效果更佳
+zsh安装命令：
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+ps：xshell有很好的复制跳板机的功能，还有不让它们超时断开，以下是解决办法：
+vim ~/.ssh/config
+host *
+ControlMaster auto
+ControlPath ~/.ssh/master-%r@%h:%p
+Host *
+    ServerAliveInterval 60
+
+推荐指数：★★★★★
+2,mac下的命令行安装软件工具brew：类似CentOS的yum 
+官网：https://brew.sh/ 
+打开终端执行下面命令即可：
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ 就可以在mac终端安装软件了,比如安装go： brew install go
+安装有GUI的程序只要加cask
+比如安装google浏览器
+brew search google-chrome
+brew cask install  google-chrome
+
+推荐指数：★★★★★
+3,mac 命令行安装软件工具mas：就是Mac App Store命令版本
+
+brew install mas
+
+
+
+
+
+5,安装搜狗输入法，语言输入功能很强大
+http://cdn2.ime.sogou.com/2bbbace62b0de410e7f4f0c14e645a17/5ba9b2a2/dl/index/1535352534/sogou_mac_48a.zip
+推荐指数：★★★★★
+6,虚拟机软件：PD和VMWare 装window备用
+Parallels Desktop 14 for Mac 正版收钱，试用15天 应该是最好用的mac 虚拟机了，没有之一。
+官网：https://www.parallels.com
+下载链接：https://download.parallels.com/desktop/v14/14.0.1-45154/ParallelsDesktop-14.0.1-45154.dmg
+推荐指数：★★★★★
+或者这个也可以VMWare Fusion 11 中文正式版 (Mac) 
+下载链接：https://download3.vmware.com/software/fusion/file/VMware-Fusion-11.0.0-10120384.dmg?PID=6354378&PubCID=3848409&cjevent=5a099d5dc1a211e8809000c80a18050b
+推荐指数：★★★★
+7，rss订阅工具
+Reeder 3 for Mac / iOS - 苹果上评价最高的 RSS 阅读器客户端 (网站更新订阅工具)
+原价98，现在限免，赶紧下手，最好用的rss订阅工具，没有之一。
+配合一些定制化工具，简直可以把任何网站，公众号，博客都订阅进来
+https://docs.rsshub.app/
+http://www.feed43.com/  订阅整个互联网
+推荐指数：★★★★★
+8,Alfred 3 for Mac
+搜索神器，用过都说好，就像windows的everything，可以搜索所有
+官方网站：https://www.alfredapp.com/
+下载链接：https://cachefly.alfredapp.com/Alfred_3.7_938.dmg
+如果再买个Alfred Powerpack 无敌了，虽然有点贵还是要支持正版
+什么，哭穷，好吧哭穷版在这里，阿弥陀佛，土豪请不要看这行
+推荐指数：★★★★★
+9,CheatSheet：快捷键提示
+如果你是一个键盘侠，那这个软件你非装不可，长按command可以调用当前软件的所有快捷键，久而久之，你就是键盘大侠了。
+官方网站：https://www.mediaatelier.com/CheatSheet/
+推荐指数：★★★★
+10,Magnet 分屏软件
+最常用快捷键control+option+enter 当前页面快速全屏显示
+操作习惯篇：
+1,三指托移-默认没有打开，还是喜欢三个手指头拖动的感觉
+官网介绍方式https://support.apple.com/zh-cn/HT204609
+
+2,触控板-轻点来点按  默认也没打开，这个必须开呀，按压真的很费力。
+3,快捷键启动台，默认是没有打开的，手按在键盘上再来触摸板四指触发不够酷，所以快捷键是必须的,在这里，我用了command+R,就好像开始运行一样^_^
+4,打开三指轻点查询单词，妈的用了好久才不小心知道，这个查单词太方便了。
+
+效果如图：
+5,关于Chrome快速跳到地址栏,默认是Command-L，单手操作根本够不着，所以我修改了使用Command-D，修改方式很简单把Command-D默认的 为此页添加书签... 改成其他快捷键，打开位置... 改为Command-D，这样就可以愉快地单手定位地址栏了^_^
+
+6,经常有些文本是经常输入的，比如地址，邮箱，身份证等等，苹果是可以设置快捷短语的，这个功能其实搜狗输入法也有，设置如下：
+
+当你在输入框输入短语就自动匹配了，重复的事情我们必须简单做
+
+7,触摸板和鼠标滚轮的方向是相反的很不习惯
+官网：https://pilotmoon.com/scrollreverser/
+下载地址：https://pilotmoon.com/downloads/ScrollReverser-1.7.6.zip
+配置如下：
+
+推荐指数：★★★★
+冷门软件篇：
+1,终端录制工具 https://asciinema.org/
+brew install asciinema
+
+Start recording with:
+
+asciinema rec
+
